@@ -6,7 +6,7 @@ import NationalIdUpload from "./NationalIdUpload";
 import CountryDropdown from "./CountryDropdown";
 import CelebrityCategoryDropdown from "./CelebrityCategoryDropdown";
 import PriceInput from "./PriceInput";
-
+import Binance from './Binance';
 import { collection, addDoc } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "@firebase/storage";
 import { db, storage } from "../../config";
@@ -219,6 +219,8 @@ const RegistrationForm = () => {
           </form>
         </div>
       </div>
+
+      <Binance/>
     </div>
   );
 };

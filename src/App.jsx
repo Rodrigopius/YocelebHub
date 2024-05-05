@@ -17,7 +17,7 @@ import logo from "./assets/images/logo.png"
 import ProfileSetUp from './pages/ProfileSetUp';
 import RegistrationForm from './components/RegistrationForm';
 import CelebProfile from './components/CelebProfile';
-
+import VideoChat from './VideoChat';
 
 function App() {
   return (
@@ -43,7 +43,7 @@ function App() {
           <Route path='/' element={<Container />} />
           <Route path='/login' element={<Login />} />
           <Route path='/trending' element={<Trending />} />
-        
+         
           <Route path='/moviedetail/:id' element={<Detail />} />
           <Route path="/favorite" element={<Favorite />} />
           <Route path="/player/:id/:title" element={<Player />} /> {/*Route-1 For Player, Title is just for beauty of url, it is not used anywhere.*/}
@@ -52,6 +52,7 @@ function App() {
           <Route path="/search/" element={<Container/>}/>
           <Route path="/profileSetUp" element={<RegistrationForm/>}/>
           <Route path="/celebProfile" element={<CelebProfile/>}/>
+          <Route path="/videoChat" element={<VideoChat/>}/>
         
         </Routes>
       </div>

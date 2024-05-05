@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getDocs, collection } from "firebase/firestore";
 import { db } from "../../config"; // Import the necessary Firebase 
 import Card from '../components/Card'
+import AvailabilityBtn from '../components/AvailabilityBtn'
 
 const Trending = () => {
   const [trendingData, setTrendingData] = useState([]);
@@ -53,9 +54,7 @@ const Trending = () => {
               <p className="text-gray-200 text-xl">${item.price}</p>
             </div>
             <div className="px-6 py-4">
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                Check Availability
-              </button>
+             <AvailabilityBtn/>
             </div>
           </div>
         ))}
